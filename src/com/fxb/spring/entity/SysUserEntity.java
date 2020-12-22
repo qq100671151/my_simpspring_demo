@@ -1,18 +1,26 @@
 package com.fxb.spring.entity;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
 /**
  * @author fengxianbin
  * @description: 用户实体
  * @create 2020-12-21 16:35
  */
+@Component
 public class SysUserEntity {
 
+    @Value("${userid:0}")
     private String id;
 
+    @Value("${username:0}")
     private String name;
 
+    @Value("${usersex:0}")
     private String sex;
 
+    @Value("${userage:0}")
     private Integer age;
 
     public String getId() {
