@@ -15,5 +15,6 @@ public class SpringHelloWord {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-context.xml");
         SysUserFacade sysUserFacade=applicationContext.getBean(SysUserFacade.class);
         sysUserFacade.say();
+        System.out.println(sysUserFacade.getSysUserEntity());
     }
 }
